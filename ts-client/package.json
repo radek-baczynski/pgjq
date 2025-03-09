@@ -5,6 +5,9 @@
   "main": "dist/client.js",
   "types": "dist/client.d.ts",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
