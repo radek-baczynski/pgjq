@@ -5,7 +5,9 @@ import { deleteQueue, purgeQueueJobs } from '../app/actions/queue-actions';
 import Link from 'next/link';
 
 interface QueueTableProps {
+  // @ts-ignore
   queues: any[];
+  // @ts-ignore
   metrics: any[];
 }
 

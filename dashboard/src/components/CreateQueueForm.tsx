@@ -29,6 +29,7 @@ export default function CreateQueueForm() {
       window.location.reload();
     } catch (err) {
       console.error('Error creating queue:', err);
+      // @ts-ignore
       setError(err instanceof Error ? err.job : 'Failed to create queue');
     } finally {
       setIsSubmitting(false);

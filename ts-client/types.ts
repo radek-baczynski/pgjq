@@ -46,7 +46,7 @@ type MetricsResult = {
 
 type JobChartRecord = {
     datetime: string;
-    status: JobStatus;
+    operation: string;
     count: number;
 }
 

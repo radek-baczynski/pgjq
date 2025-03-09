@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@pgjq/ts-client": "^1.0.6",
+    "@pgjq/ts-client": "^1.0.7",
     "@tremor/react": "^3.18.7",
     "@types/pg": "^8.11.11",
     "dlx": "^0.2.1",
@@ -21,7 +21,7 @@
     "pg": "^8.13.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rechart": "^0.0.1",
+    "recharts": "^2.15.1",
     "shadcn-ui": "^0.9.5",
     "tls": "^0.0.1",
     "tsx": "^4.19.3"

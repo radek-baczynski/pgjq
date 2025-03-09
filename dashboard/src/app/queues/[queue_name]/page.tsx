@@ -4,24 +4,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { getQueueJobs, getQueueMetrics, getJobsChart, getJob } from "@/app/actions/queue-actions";
 import JobsChart from "@/components/JobsChart";
+import type { Job, MetricsResult, JobChartRecord } from "@pgjq/ts-client";
 
-// Define types to fix TypeScript errors
-interface Job {
-  job_id: string;
-  status: string;
-  enqueued_at: string;
-  job: Record<string, unknown>;
-}
 
-interface MetricsResult {
-  [key: string]: number;
-}
-
-interface JobChartRecord {
-  datetime: string;
-  operation: string;
-  count: number;
-}
 
 export default function QueueDetailsPage() {
   const params = useParams();
@@ -37,7 +22,7 @@ export default function QueueDetailsPage() {
   const [totalJobs, setTotalJobs] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
-  const [metrics, setMetrics] = useState<MetricsResult>({});
+  const [metrics, setMetrics] = useState<MetricsResult | null>(null);
   const [jobsChart, setJobsChart] = useState<JobChartRecord[]>([]);
   const [autoRefresh, setAutoRefresh] = useState(false);
   const [refreshInterval, setRefreshInterval] = useState(10); // seconds
@@ -63,6 +48,7 @@ export default function QueueDetailsPage() {
       setJobsChart(jobsChart);
 
       setJobs(result);
+      // @ts-ignore
       setTotalJobs(metrics[`${status}_count`] || 0);
       setTotalPages(Math.ceil(result.length / perPage));
     } catch (error) {
@@ -250,7 +236,10 @@ export default function QueueDetailsPage() {
                   : "bg-gray-100 text-gray-500"
               }`}
             >
-              {statusOption} ({metrics[`${statusOption}_count`] || 0})
+              {statusOption} ({
+                // @ts-ignore
+                metrics?.[`${statusOption}_count`] || 0
+              })
             </button>
           ))}
         </div>

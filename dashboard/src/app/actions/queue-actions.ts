@@ -1,13 +1,7 @@
 "use server";
 
 import { PGJobQueue } from "@pgjq/ts-client";
-import type {
-  Job,
-  JobListResult,
-  JobStatus,
-  MetricsResult,
-  JobChartRecord,
-} from "@pgjq/ts-client";
+import type { Job, MetricsResult, JobChartRecord } from "@pgjq/ts-client";
 
 // Initialize the queue with the database connection string from environment variables
 const getQueueInstance = () => {
@@ -118,7 +112,7 @@ export async function getQueueJobs(
   sortBy: string,
   sortDir: string,
   statuses: string[]
-): Promise<JobListResult> {
+): Promise<Job[]> {
   const queue = getQueueInstance();
   try {
     if (!sortBy) {
