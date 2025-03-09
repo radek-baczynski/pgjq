@@ -28,12 +28,14 @@ jobs:
           version: 10
           
       - name: Install dependencies
-        run: ls -all && pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
         
       - name: Build
         run: pnpm run build
         
       - name: Publish to npm
-        run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
+        run: |
+          npm config set _authToken=${{ secrets.NPM_TOKEN }}
+          echo "Publishing to npm..."
+          pnpm publish --no-git-checks
+          echo "Published to npm"
