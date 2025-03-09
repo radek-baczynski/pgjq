@@ -36,8 +36,8 @@ importers:
         specifier: ^8.13.3
         version: 8.13.3
       pgjq-ts-client:
-        specifier: github:radek-baczynski/pgjq
-        version: pgjq.git@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/d06bdf667290193c0a4db6717f015e8a176b8aae
+        specifier: github:radek-baczynski/pgjq#main&path:ts-client/dist
+        version: dist@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/b378b4207932b77d10c86802f60b1ff7c8cbe24c#path:ts-client/dist
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1226,6 +1226,10 @@ packages:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
     engines: {node: '>=0.3.1'}
 
+  dist@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/b378b4207932b77d10c86802f60b1ff7c8cbe24c#path:ts-client/dist:
+    resolution: {path: ts-client/dist, tarball: https://codeload.github.com/radek-baczynski/pgjq/tar.gz/b378b4207932b77d10c86802f60b1ff7c8cbe24c}
+    version: 0.0.0
+
   dlv@1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
 
@@ -2179,10 +2183,6 @@ packages:
     peerDependenciesMeta:
       pg-native:
         optional: true
-
-  pgjq.git@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/d06bdf667290193c0a4db6717f015e8a176b8aae:
-    resolution: {tarball: https://codeload.github.com/radek-baczynski/pgjq/tar.gz/d06bdf667290193c0a4db6717f015e8a176b8aae}
-    version: 0.0.0
 
   pgpass@1.0.5:
     resolution: {integrity: sha512-FdW9r/jQZhSeohs1Z3sI1yxFQNFvMcnmfuj4WBMUTxOrAyLMaTcE1aAMBiTlbMNaXvBCQuVi0R7hd8udDSP7ug==}
@@ -3939,6 +3939,8 @@ snapshots:
 
   diff@5.2.0: {}
 
+  dist@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/b378b4207932b77d10c86802f60b1ff7c8cbe24c#path:ts-client/dist: {}
+
   dlv@1.1.3: {}
 
   dlx@0.2.1:
@@ -5069,8 +5071,6 @@ snapshots:
       pgpass: 1.0.5
     optionalDependencies:
       pg-cloudflare: 1.1.1
-
-  pgjq.git@https://codeload.github.com/radek-baczynski/pgjq/tar.gz/d06bdf667290193c0a4db6717f015e8a176b8aae: {}
 
   pgpass@1.0.5:
     dependencies:

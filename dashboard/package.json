@@ -18,7 +18,7 @@
     "net": "^1.0.2",
     "next": "15.1.7",
     "pg": "^8.13.3",
-    "pgjq-ts-client": "github:radek-baczynski/pgjq#main&path:ts-client/dist",
+    "pgjq-ts-client": "^1.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rechart": "^0.0.1",

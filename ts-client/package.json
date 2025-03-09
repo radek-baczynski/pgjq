@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/client.js",
   "types": "dist/client.d.ts",
+  "private": false,
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
