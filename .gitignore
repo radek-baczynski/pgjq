@@ -1,0 +1,12 @@
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+**/.env.test
+**/.env.test.local
+**/__pycache__
+**/node_modules
+**/dist
+**/build
+**/coverage
+**/logs

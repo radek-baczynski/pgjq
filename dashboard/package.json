@@ -1,0 +1,40 @@
+{
+  "name": "pgjq-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000 --hostname 0.0.0.0",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@tremor/react": "^3.18.7",
+    "@types/pg": "^8.11.11",
+    "dlx": "^0.2.1",
+    "init": "^0.1.2",
+    "lucide-react": "^0.476.0",
+    "net": "^1.0.2",
+    "next": "15.1.7",
+    "pg": "^8.13.3",
+    "pgjq-ts-client": "file:../ts-client/dist",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rechart": "^0.0.1",
+    "shadcn-ui": "^0.9.4",
+    "tls": "^0.0.1",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

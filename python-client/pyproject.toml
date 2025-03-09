@@ -1,0 +1,11 @@
+[project]
+name = "pgjq-python-client"
+version = "0.1.0"
+description = "PGJobQueue Python Client"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "devtools>=0.12.2",
+    "python-dotenv>=1.0.1",
+]
