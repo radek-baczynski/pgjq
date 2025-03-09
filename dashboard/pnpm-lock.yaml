@@ -12,8 +12,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(react@19.0.0)
       '@pgjq/ts-client':
-        specifier: ^1.0.7
-        version: 1.0.7
+        specifier: ^1.0.8
+        version: 1.0.8
       '@tremor/react':
         specifier: ^3.18.7
         version: 3.18.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -548,8 +548,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@pgjq/ts-client@1.0.7':
-    resolution: {integrity: sha512-XA4j07jc8nrUhTWHp6Z+QTI+twT7IYRhN7wZmpiuuS6d3VFEURvINqw/9a1js5ZohzLLPlHDqizlda1KkpV7dQ==}
+  '@pgjq/ts-client@1.0.8':
+    resolution: {integrity: sha512-LuvkE2ZllHq6zmlRGQCB8cjnPVAqWWTcTWOcpLF3HjkMl43wKPAr7Ox1VHMd/tZonoFceAZvnmD+AGQGwW77qA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2624,7 +2624,7 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@pgjq/ts-client@1.0.7':
+  '@pgjq/ts-client@1.0.8':
     dependencies:
       dotenv: 16.4.7
       postgres: 3.4.5

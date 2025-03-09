@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@pgjq/ts-client": "^1.0.7",
+    "@pgjq/ts-client": "^1.0.8",
     "@tremor/react": "^3.18.7",
     "@types/pg": "^8.11.11",
     "dlx": "^0.2.1",

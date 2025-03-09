@@ -30,7 +30,7 @@ export default function QueueTable({ queues, metrics }: QueueTableProps) {
         window.location.reload();
       } catch (error) {
         console.error('Error deleting queue:', error);
-        alert(`Failed to delete queue: ${error instanceof Error ? error.job : String(error)}`);
+        alert(`Failed to delete queue: ${String(error)}`);
       } finally {
         setIsDeleting(null);
       }
@@ -47,7 +47,7 @@ export default function QueueTable({ queues, metrics }: QueueTableProps) {
         window.location.reload();
       } catch (error) {
         console.error('Error purging queue:', error);
-        alert(`Failed to purge queue: ${error instanceof Error ? error.job : String(error)}`);
+        alert(`Failed to purge queue: ${String(error)}`);
       } finally {
         setIsPurging(null);
       }
