@@ -1,6 +1,6 @@
 [project]
-name = "pgjq-python-client"
-version = "0.1.0"
+name = "pgjq-client"
+version = "0.1.1"
 description = "PGJobQueue Python Client"
 readme = "README.md"
 requires-python = ">=3.12"

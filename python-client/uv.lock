@@ -61,8 +61,8 @@ wheels = [
 ]
 
 [[package]]
-name = "pgjq-python-client"
-version = "0.1.0"
+name = "pgjq-client"
+version = "0.1.1"
 source = { virtual = "." }
 dependencies = [
     { name = "asyncpg" },
