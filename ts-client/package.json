@@ -1,9 +1,9 @@
 {
   "name": "@pgjq/ts-client",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
-  "main": "dist/client.js",
-  "types": "dist/client.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "private": false,
   "publishConfig": {
     "access": "public"
