@@ -1,6 +1,6 @@
 {
-  "name": "pgjq-ts-client",
-  "version": "1.0.2",
+  "name": "@pgjq/ts-client",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/client.js",
   "types": "dist/client.d.ts",
